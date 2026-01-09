@@ -8,7 +8,7 @@ I watched parts 1 through 5. I want to build projects with Rust as soon as possi
 
 Short-term roadmap:
 
-- [ ] Complete basic topics (lessons 1 to 19 from course) and Rustlings (Intro, Variables, Functions, If)
+- [ ] Complete basic topics (lessons 1 to 19 from course) and Rustlings (Intro, Variables, Functions, If) [CURRENTLY DOING]
 - [ ] Action: Implement Shell Part 1 & 2 (Basic loop & input)
 - [ ] Complete Ownership & Borrowing (lessons 22 to 27 from course) and Rustlings (Ownership, Primitive Types)
 - [ ] Action: Implement Shell Part 3 (Handling Args - where ownership matters)
