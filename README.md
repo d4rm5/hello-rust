@@ -20,4 +20,9 @@ Short-term roadmap:
 
 ## Day 3
 - Watched parts 7 to 10. 
-- Rustlings string and &str and structs exercises.
+- Rustlings string and &str, structs exercises.
+
+## Day 4
+
+- Watched opearators, if_else, loop, match, if let, function, module videos
+- if, functions, enums, modules exercises.
