@@ -2,8 +2,8 @@
 
 Short-term roadmap:
 
-- [ ] Complete basic topics (lessons 1 to 19 from course) and Rustlings (Intro, Variables, Functions, If) [CURRENTLY DOING]
-- [ ] Action: Implement Shell Part 1 & 2 (Basic loop & input)
+- [x] Complete basic topics (lessons 1 to 21 from course) and Rustlings (Intro, Variables, Functions, If) 
+- [ ] Action: Implement Shell Part 1 & 2 (Basic loop & input) [CURRENTLY DOING]
 - [ ] Complete Ownership & Borrowing (lessons 22 to 27 from course) and Rustlings (Ownership, Primitive Types)
 - [ ] Action: Implement Shell Part 3 (Handling Args - where ownership matters)
 - [ ] Complete Common Collections (lessons 28 to 30 from course) and Rustlings (Vecs, Strings)
@@ -26,3 +26,8 @@ Short-term roadmap:
 
 - Watched opearators, if_else, loop, match, if let, function, module videos
 - if, functions, enums, modules exercises.
+
+## Day 5
+
+- Watched handle error and unwrap lessons.
+- Started Build your own Shell (`/my-own-shell`) project.
