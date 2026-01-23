@@ -11,10 +11,32 @@ fn main() {
         let mut input = String::new(); // Creamos nuevo String vacío
         stdin().read_line(&mut input).unwrap(); // Lo rellenamos con el input del usuario.
 
-        let command = input.trim(); // Elimina la linea generada por read_line
+        let mut parts = input.trim().split_whitespace(); // Dividimos el input por espacios en blanco
+        let command = parts.next().unwrap(); // Extraemos la primer parte como comando
+        let args = parts; // Tratamos las siguientes partes como argumentos
 
-        let mut child = Command::new(command).spawn().unwrap(); // Transformamos el comando en mutable
+        match command {
+            // usamos el patrón match para codear los builints
+            "cd" => {
+                /* let new_dir = match args.peekable().peek() {
+                    Some(valor) => *valor, // "Desreferenciamos" para acceder al texto real
+                    None => "/",
+                };  */
+                let new_dir = args.peekable().peek().map_or("/", |x| *x);
 
-        child.wait(); // No aceptamos otro comando hasta que finalice el primero.
+                if let Err(e) = env::set_current_dir(&root) {
+                    eprintln!("{}", e);
+                }
+            }
+            "exit" => return,
+            command => {
+                let child = Command::new(command).args(args).spawn().unwrap(); // Transformamos el comando en mutable
+
+                match child {
+                    Ok(mut child) => child.wait(),
+                    Err(e) => eprintln!("{}", e),
+                }
+            }
+        }
     }
 }

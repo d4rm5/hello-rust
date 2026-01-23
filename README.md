@@ -31,3 +31,8 @@ Short-term roadmap:
 
 - Watched handle error and unwrap lessons.
 - Started Build your own Shell (`/my-own-shell`) project.
+
+## Day 6
+
+- Question operator, borrow rules and ownership rules videos.
+- Multiple Args, Error Handling, Shell Builtins.
